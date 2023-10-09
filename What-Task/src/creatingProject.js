@@ -21,7 +21,7 @@ const createEventListener = () =>{
     displayProject(projectList);
 }
 
-//get project list of objects from locak storage or start with empty
+//get project list of objects from local storage or start with empty
 let defaultProjectList=[];
 let projectList = localStorage.getItem("myProjectList");
     projectList = JSON.parse(projectList || JSON.stringify(defaultProjectList));
